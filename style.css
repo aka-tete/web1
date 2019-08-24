@@ -2,7 +2,7 @@ body{
   margin:0;
 }
 a {
-  color:black;
+  
 }
 h1 {
   font-size:45px;
@@ -16,6 +16,16 @@ ol{
   width:100px;
   margin:0;
   padding:20px;
+}
+.js {
+  font-weight:bold;
+  color:red;
+}
+#first {
+  color:green;
+}
+span {
+  color:blue;
 }
 #grid{
   display: grid;

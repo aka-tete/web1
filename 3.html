@@ -4,6 +4,8 @@
   <title>WEB1 - JavaScript</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146122755-1"></script>
   <script>
@@ -11,36 +13,6 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-146122755-1');
-  </script>
-  <script>
-  function LinksSetColor(color){
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color = color;
-      i = i + 1;
-    }
-  }
-  function BodySetColor(color){
-    document.querySelector('body').style.color = color;
-  }
-  function BodySetBackgroundColor(color){
-    document.querySelector('body').style.backgroundColor = color;
-  }
-  function nightDayHandler(self){
-    var target = document.querySelector('body');
-    if(self.value === 'night'){
-      Body.setBackgroundColor('black');
-      Body.setColor('white');
-      self.value = 'day';
-      Links.setColor('powderblue');
-    } else {
-      Body.setBackgroundColor('white');
-      Body.setColor('black');
-      self.value = 'night';
-      Links.setColor('blue');
-    }
-  }
   </script>
 </head>
 <body>
